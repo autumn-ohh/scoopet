@@ -1,0 +1,14 @@
+{
+    "homepage": "https://nodejs.org",
+    "description": "Node.js® is an open-source, cross-platform JavaScript runtime environment.",
+    "version": "14.17.0",
+    "license": "GPL-3.0",
+    "url": "https://nodejs.org/dist/v14.17.0/node-v14.17.0-x64.msi",
+    "hash": "6d4c7457a210b867ca5b1c4a4465b4065ae6708dfd917383fe61f6860dba2128",
+    "innosetup": true,
+    "bin": "node.exe",
+    "shortcuts": [["node.exe", "node"]],
+    "checkver": {
+        "url": "https://nodejs.org"
+    }
+}
