@@ -2,13 +2,19 @@
     "homepage": "https://nodejs.org",
     "description": "Node.js® is an open-source, cross-platform JavaScript runtime environment.",
     "version": "14.17.0",
-    "license": "GPL-3.0",
-    "url": "https://nodejs.org/dist/v14.17.0/node-v14.17.0-win-x64.7z",
-    "hash": "bfd45ff5065def2aa85e5da3c7e88035078c956286d9ea0220752ad98d6d28de",
-    "innosetup": true,
+    "architecture": {
+        "64bit": {
+            "url": "https://nodejs.org/dist/v14.17.0/win-x64/node.exe#/dl.7z",
+            "hash": ""
+        }
+    },
+    "pre_install": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
+    "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\" -Recurse",
     "bin": "node.exe",
-    "shortcuts": [["node.exe", "node"]],
-    "checkver": {
-        "url": "https://nodejs.org"
-    }
+    "shortcuts": [
+        [
+            "node.exe",
+            "node"
+        ]
+    ]
 }
