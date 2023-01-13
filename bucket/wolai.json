@@ -1,10 +1,10 @@
 {
-    "version": "1.2.3",
+    "version": "1.2.5",
     "description": "类Notion的笔记本应用",
     "homepage": "https://www.wolai.com/",
     "architecture": {
       "64bit": {
-        "url": "https://static2.wolai.com/dist/installers/wolai%20Setup%201.2.3.exe#/dl.7z",
+        "url": "https://static2.wolai.com/dist/installers/wolai%20Setup%201.2.5.exe#/dl.7z",
         "hash": ""
       }
     },
