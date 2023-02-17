@@ -1,0 +1,20 @@
+{
+    "version": "3.3.3_9",
+    "description": "类Notion的笔记本应用",
+    "homepage": "https://www.ximalaya.com/",
+    "architecture": {
+      "64bit": {
+        "url": "https://www.ximalaya.com/down/lite/v2?client=win&channelId=99&subChannelId=100001",
+        "hash": ""
+      }
+    },
+    "pre_install": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
+    "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\" -Recurse",
+    "autoupdate": {
+      "architecture": {
+        "64bit": "https://www.ximalaya.com/down/lite/v2?client=win&channelId=99&subChannelId=100001"
+      }
+    },
+    "bin": "Ximalaya.exe",
+    "shortcuts": [["Ximalaya.exe", "Ximalaya", "ximalaya"]]
+  }
